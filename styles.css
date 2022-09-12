@@ -50,18 +50,15 @@ button {
 #rollBtn {
     background-color: var(--color-5);
 }
-
 #resetBtn {
     background-color: var(--color-4);
 }
-
 button:focus {
     outline: none;
 }
 #resetBtn {
     display: none;
 }
-
 .active {
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
 }

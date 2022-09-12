@@ -19,7 +19,18 @@ rollBtn.addEventListener("click", function(){
         player1Dice.classList.remove("active");
         player2Dice.classList.add("active")
         messageEl.textContent = "Player 2 turn"
-    } else {
+    } 
+    else if(player1Score >= 20){
+        messageEl.textContent = "Player 1 has won! 🥳";
+        rollBtn.style.display = "none";
+        resetBtn.style.display = "block";
+    }
+    else if(player2Score >= 20){
+        messageEl.textContent = "Player 2 has won! 🎉";
+        rollBtn.style.display = "none";
+        resetBtn.style.display = "block";
+    }
+    else {
        player2Dice.textContent = randomNumber;
        player2Score += randomNumber;
        player2Scoreboard.textContent = player2Score;

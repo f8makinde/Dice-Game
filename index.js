@@ -14,11 +14,15 @@ rollBtn.addEventListener("click", function(){
     let randomNumber = Math.floor(Math.random() * 6) + 1;
     if (player1Turn) {
         player1Dice.textContent = randomNumber;
+        player1Score += randomNumber;
+        player1Scoreboard.textContent = player1Score;
         player1Dice.classList.remove("active");
         player2Dice.classList.add("active")
         messageEl.textContent = "Player 2 turn"
     } else {
        player2Dice.textContent = randomNumber;
+       player2Score += randomNumber;
+       player2Scoreboard.textContent = player2Score;
        player1Dice.classList.add("active");
        player2Dice.classList.remove("active")
        messageEl.textContent = "Player 1 turn"

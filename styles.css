@@ -42,10 +42,10 @@ button {
     color: #fff;
     padding: 20px 30px;
     font-size: 20px;
-    margin-top: 40px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 40px auto;
 }
 #rollBtn {
     background-color: var(--color-5);
